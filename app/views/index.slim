@@ -1,0 +1,6 @@
+- if current_user
+  h2 Hello #{current_user['name']}
+  p Your email is #{current_user['email']}
+  p Your profile url is #{current_user['urls']['profile']}
+- else
+  a href='/auth/academiaedu' Sign in with Academia.edu
