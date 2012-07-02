@@ -2,7 +2,7 @@ source :rubygems
 
 gem 'sinatra', require: 'sinatra/base'
 gem 'omniauth'
-gem 'omniauth-academiaedu', path: '~/Code/academia/omniauth-academiaedu'
+gem 'omniauth-academiaedu'
 
 gem 'slim'
 
