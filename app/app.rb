@@ -1,6 +1,4 @@
 
-require 'pry'
-
 class App < Sinatra::Base
 
   use Rack::Session::Cookie
