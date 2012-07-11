@@ -4,8 +4,8 @@ class App < Sinatra::Base
   use Rack::Session::Cookie
   use OmniAuth::Builder do
     provider :academiaedu,
-      'b944c3929026621a94ac615ce11e9c8c355ce9c6161e0d6a77a2e194d717cabc',
-      'a8d6b5f5705a9fb38b92c67b6a22cd1291449a6a818630096003401b8b546992'
+      ENV['AUTH_KEY'],
+      ENV['AUTH_SECRET']
   end
 
   helpers do
